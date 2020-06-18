@@ -1,0 +1,56 @@
+.flex-container {
+  display: flex;
+  width: 40%;
+  margin: 50px auto;
+  border: 1px solid gainsboro;
+}
+
+.flex-child {
+  flex: 1;
+  padding: 5px;
+  margin: 5px;
+}
+
+#game-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 0;
+}
+
+#game-info {
+  padding: 0;
+}
+
+#game-info > #game-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+#game-info > .game-player {
+  margin: 10px 0;
+  padding: 5px;
+  align-items: center;
+  border: 1px solid black;
+}
+
+#game-board > div {
+  display: flex;
+  flex: 0 0 93px;
+  border: 1px solid black;
+  height: 93px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#game-board > div:hover {
+  background-color: lightgray;
+}
+
+#game-board > .active {
+  background-color: gainsboro;
+}
